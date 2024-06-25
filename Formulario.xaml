@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DBP_Xamarin.Principal.Formulario"
+             NavigationPage.HasNavigationBar="False">
+    <ScrollView>
+        <StackLayout BackgroundColor="#5BA199">
+
+            <Label Text="Formulario de Jose Miguel Valdivia Castillo"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,40" />
+
+            <Frame BackgroundColor="#DDBEAA"
+                   Margin="20,0"
+                   CornerRadius="20">
+
+                <StackLayout BackgroundColor="#DDBEAA">
+
+                    <Image Source="https://cdn-icons-png.freepik.com/256/3157/3157914.png?semt=ais_hybrid"
+                           Margin="0,20" />
+
+                    <Label Text="Ingrese los siguientes parametros: " 
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="Center"/>
+
+                    <Label Text="Nombre:" 
+                           Margin="0,20,0,0"
+                           FontSize="20"
+                           />
+
+                    <Entry Keyboard="Default"
+                           Placeholder="Nombre"
+                           TextColor="Black"
+                           PlaceholderColor="Gray"
+                           x:Name="Nombre_i"/>
+
+                    <Label Text="Apellidos:"
+                           Margin="0,20,0,0"
+                           FontSize="20" />
+
+                    <Entry Keyboard="Default"
+                           Placeholder="Apellidos"
+                           TextColor="Black"
+                           PlaceholderColor="Gray"
+                           x:Name="Apellidos_i"/>
+
+                    <Label Text="Fecha de Nacimiento:"
+                           Margin="0,20,0,0"
+                           FontSize="20" 
+                           />
+
+                    <Entry Keyboard="Numeric"
+                           Placeholder="Dia (1->31)"
+                           TextColor="Black"
+                           PlaceholderColor="Gray"
+                           x:Name="Dia_i"
+                           />
+                    <Entry Keyboard="Numeric"
+                           Placeholder="Mes (1->12)"
+                           TextColor="Black"
+                           PlaceholderColor="Gray"
+                           x:Name="Mes_i" />
+
+                    <Entry Keyboard="Numeric"
+                           Placeholder="Año (1900 -> 2024)"
+                           TextColor="Black"
+                           PlaceholderColor="Gray"
+                           x:Name="Año_i" />
+
+                    <Label Text="Ocupación:"
+                           Margin="0,20,0,0"
+                           FontSize="20" />
+
+                    <Entry Keyboard="Default"
+                           Placeholder="Ocupación"
+                           TextColor="Black"
+                           PlaceholderColor="Gray"
+                           x:Name="Ocupacion_i"/>
+
+                    <Label Text="Celular:"
+                           Margin="0,20,0,0"
+                           FontSize="20" />
+
+                    <Entry Keyboard="Telephone"
+                           Placeholder="Celular"
+                           TextColor="Black"
+                           PlaceholderColor="Gray"
+                           x:Name="Telefono_i"/>
+
+                    <Label Text="Correo Electrónico:"
+                           Margin="0,20,0,0"
+                           FontSize="20" />
+
+                    <Entry Keyboard="Default"
+                           Placeholder="Correo Electrónico" 
+                           TextColor="Black"
+                           PlaceholderColor="Gray"
+                           x:Name="Correo_i"/>
+
+                    <Label Text="Aptitudes:"
+                           Margin="0,20,0,0"
+                           FontSize="20" />
+
+                    <Entry Keyboard="Default"
+                           Placeholder="Aptitudes"
+                           TextColor="Black"
+                           PlaceholderColor="Gray"
+                           x:Name="Aptitudes_i"/>
+
+                    <Label Text="Experiencia Laboral:"
+                           Margin="0,20,0,0"
+                           FontSize="20" />
+
+                    <Entry Keyboard="Default"
+                           Placeholder="Experiencia Laboral"
+                           TextColor="Black"
+                           PlaceholderColor="Gray"
+                           x:Name="Experiencia_i"/>
+
+                    <Label Text="Formación Académica:"
+                           Margin="0,20,0,0"
+                           FontSize="20" />
+
+                    <Entry Keyboard="Default"
+                           Placeholder="Formación Académica"
+                           TextColor="Black"
+                           PlaceholderColor="Gray"
+                           x:Name="Formacion_i"/>
+
+
+                </StackLayout>
+
+            </Frame>
+
+            <Button Text="Enviar"
+                    Margin="30,20,30,20"
+                    CornerRadius="20"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    BackgroundColor="#CCCCCC"
+                    x:Name="Enviar"
+                    Clicked="Enviar_Clicked"/>
+
+            <Button Text="Reset"
+                    Margin="30,0,30,20"
+                    CornerRadius="20"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    BackgroundColor="#CCCCCC"
+                    x:Name="Reset"
+                    Clicked="Reset_Clicked" />
+
+
+        </StackLayout>
+
+    </ScrollView>
+
+</ContentPage>

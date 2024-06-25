@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DBP_Xamarin.MainPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout Orientation="Vertical"
+                 BackgroundColor="#469597">
+        <Label Text="Formulario Xamarin"
+               FontSize="40"
+               FontAttributes="Bold"
+               Margin="0,25,0,0"
+               HorizontalOptions="Center" />
+        <Frame VerticalOptions="FillAndExpand"
+               Margin="30, 30"
+               CornerRadius="20"
+               HasShadow="False"
+               BackgroundColor="#E5E3E4">
+            <StackLayout BackgroundColor="#E5E3E4">
+
+                <Image Source="https://static-00.iconduck.com/assets.00/apps-xamarin-studio-icon-1024x1024-dow8dpt8.png"
+                       Margin="0,30,0,0"
+                       HorizontalOptions="Center" />
+
+                <Label Text="Formulario Xamarin"
+                       Margin="0,30,0,0"
+                       FontSize="20"
+                       HorizontalOptions="Center" />
+
+                <Button Text="Iniciar Formulario"
+                        TextTransform="None"
+                        HorizontalOptions="Fill"
+                        Margin="0,20,0,0"
+                        BackgroundColor="#DDBEAA" 
+                        x:Name="btn_continue"
+                        Clicked="btn_continue_Clicked"/>
+
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DBP_Xamarin.Principal.CV_Generado">
+
+    <ScrollView>
+
+        <StackLayout BackgroundColor="#71879a">
+
+            <Label Text="Formulario a CV"
+                   FontSize="30"
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   Margin="20,40"
+                   BackgroundColor="#DDBEAA"
+                   
+                   />
+
+            <Frame BackgroundColor="#DDBEAA"
+                   Margin="20,0"
+                   CornerRadius="20">
+
+                <StackLayout >
+
+
+                    <Image Source="https://cdn-icons-png.flaticon.com/512/6073/6073873.png"
+                           Margin="0,20"
+                           WidthRequest="250"
+                           HeightRequest="250"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center" />
+
+                    <StackLayout x:Name="Datos_Ingresados"
+                                 BackgroundColor="#DDBEAA"
+                                 Margin="20,0, 20, 20">
+
+
+                        <Label Text="Nombre: "
+                               FontSize="20" />
+
+                        <Label x:Name="Nombre_Label"
+                               FontSize="20" />
+
+                        <Label Text="Apellidos: "
+                               FontSize="20" />
+
+                        <Label x:Name="Apellido_Label"
+                               FontSize="20" />
+                        
+                        <Label Text="Fecha de Nacimiento:"
+                               FontSize="20" />
+
+                        <Label x:Name="Fecha_Label"
+                               FontSize="20" />
+                        
+                        <Label Text="Ocupación:"
+                               FontSize="20" />
+
+                        <Label x:Name="Ocupacion_Label"
+                               FontSize="20" />
+                        
+                        <Label Text="Celular: "
+                               FontSize="20" />
+
+                        <Label x:Name="Celular_Label"
+                               FontSize="20" />
+                        
+                        <Label Text="Correo Electrónico:"
+                               FontSize="20" />
+
+                        <Label x:Name="Correo_Label"
+                               FontSize="20" />
+                        
+                        <Label Text="Aptitudes:"
+                               FontSize="20" />
+
+                        <Label x:Name="Aptitudes_Label"
+                               FontSize="20" />
+                        
+                        <Label Text="Experiencia Laboral:"
+                               FontSize="20" />
+
+                        <Label x:Name="Experiencia_Label"
+                               FontSize="20" />
+                        
+                        <Label Text="Formación Académica:"
+                               FontSize="20" />
+
+                        <Label x:Name="Formacion_Label"
+                               FontSize="20" />
+
+                        <!-- Aqui se insertara los datos ingresados -->
+
+                    </StackLayout>
+
+
+
+                </StackLayout>
+
+
+            </Frame>
+
+        </StackLayout>
+       
+        
+    </ScrollView>
+    
+    
+</ContentPage>
